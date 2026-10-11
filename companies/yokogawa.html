@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yokogawa - Airline Engineers</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :root {
+      --company-main: #004f9b;
+      --company-accent: #004f9b;
+    }
+    .company-header-bg { background: var(--company-main); }
+    .company-accent { color: var(--company-accent); border-color: var(--company-accent); }
+  </style>
+</head>
+<body style="margin:0; padding:0; font-family: 'Inter', Arial, sans-serif; background:#e6eef3;">
+  <header style="background:#e6eef3; height:80px; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; box-sizing:border-box; position:sticky; top:0; z-index:100;">
+    <a href="../index.html" style="display:flex; align-items:center; gap:8px; text-decoration:none; font-size:1.25rem; font-weight:700; color:#111; margin-left:32px;">
+      <img src="../assets/images/aelogo.png" alt="Logo" style="width:56px; height:56px; object-fit:contain; margin-left:10px; margin-right:10px;" />
+      <span style="font-family: 'Inter', Arial, sans-serif; color:#111; font-weight:700;">Airline Engineers</span>
+    </a>
+    <div style="position:absolute; left:50%; top:0; height:80px; display:flex; align-items:center; transform:translateX(-50%); z-index:1;">
+  <img src="../assets/images/yokogawalogo.png" alt="Yokogawa Logo" style="height:56px; max-width:160px; object-fit:contain; display:block;" />
+    </div>
+    <nav>
+  <a href="#products" style="color:#444; text-decoration:none; font-weight:500; font-size:1.1rem;" onclick="event.preventDefault(); document.querySelector('#products').scrollIntoView({ behavior: 'smooth' });">Products</a>
+    </nav>
+  </header>
+  <section class="company-header-bg" style="padding: 60px 0 60px 0; text-align:center; color:#fff;" data-aos="slide-down" data-aos-once="true" data-aos-out="fade-out">
+    <h1 style="font-size:3rem; font-weight:800; margin-bottom:1rem;">Yokogawa</h1>
+    <p style="font-size:1.4rem; font-weight:400;">Industrial automation and control solutions</p>
+  </section>
+  <section style="background:#e3eef5; padding:60px 0 60px 0; text-align:center;" data-aos="fade-up" data-aos-once="true" data-aos-out="fade-out">
+    <h2 style="font-size:2.5rem; font-weight:700; color:#111; margin-bottom:1rem;">Why Yokogawa Stands Out</h2>
+    <div style="width:70px; height:5px; background:var(--company-accent); margin:0 auto 2rem auto; border-radius:3px;"></div>
+    <p style="max-width:800px; margin:0 auto; font-size:1.25rem; color:#222; line-height:1.6;">
+      Yokogawa is a global leader in industrial automation, providing innovative solutions for process control, measurement, and optimization.
+    </p>
+  </section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ duration: 900, once: false });</script>
+  <section class="site-footer">
+    <div class="container mx-auto p-6 text-center text-sm">
+      <p>&copy; <span id="footer-year"></span> Airline Engineers. All Rights Reserved.</p>
+    </div>
+  </section>
+</body>
+</html>

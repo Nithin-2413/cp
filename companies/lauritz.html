@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .download-btn {
+      display: inline-block;
+      margin-top: auto;
+      border: 1px solid var(--company-main);
+      background: #fff;
+      color: var(--company-main);
+      border-radius: 6px;
+      padding: 10px 22px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: background 0.3s, color 0.3s;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    .download-btn:hover {
+      background: var(--company-main);
+      color: #fff;
+    }
+  </style>
+  <style>
+    .product-img {
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+      cursor: pointer;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .product-img:hover {
+      transform: scale(1.08);
+    }
+    .product-card {
+      background:#fff;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      padding:28px 28px;
+      box-shadow:0 2px 12px rgba(0,95,137,0.08);
+      text-align:center;
+      width:440px;
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    .product-img-container {
+      height:220px;
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:22px;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lauritz Knudsen - Airline Engineers</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :root {
+      --company-main: #005F89;
+      --company-accent: #005F89;
+    }
+    .company-header-bg { background: var(--company-main); }
+    .company-accent { color: var(--company-accent); border-color: var(--company-accent); }
+  </style>
+</head>
+<body style="margin:0; padding:0; font-family: 'Inter', Arial, sans-serif; background:#e6eef3;">
+  <header style="background:#fff; height:80px; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; box-sizing:border-box; position:sticky; top:0; z-index:100;">
+    <a href="../index.html" style="display:flex; align-items:center; gap:8px; text-decoration:none; font-size:1.25rem; font-weight:700; color:#111; margin-left:32px;">
+      <img src="../assets/images/aelogo.png" alt="Logo" style="width:56px; height:56px; object-fit:contain; margin-left:10px; margin-right:10px;" />
+      <span style="font-family: 'Inter', Arial, sans-serif; color:#111; font-weight:700;">Airline Engineers</span>
+    </a>
+    <div style="position:absolute; left:50%; top:0; height:80px; display:flex; align-items:center; transform:translateX(-50%); z-index:1;">
+  <img src="../assets/images/lklogo.png" alt="Lauritz Knudsen Logo" style="height:56px; max-width:160px; object-fit:contain; display:block;" />
+    </div>
+    <nav>
+  <a href="#products" style="color:#444; text-decoration:none; font-weight:500; font-size:1.1rem;" onclick="event.preventDefault(); document.querySelector('#products').scrollIntoView({ behavior: 'smooth' });">Products</a>
+    </nav>
+  </header>
+  <section class="company-header-bg" style="padding: 60px 0 60px 0; text-align:center; color:#fff;" data-aos="slide-down" data-aos-once="true" data-aos-out="fade-out">
+    <h1 style="font-size:3rem; font-weight:800; margin-bottom:1rem;">Lauritz Knudsen</h1>
+    <p style="font-size:1.4rem; font-weight:400;">Electrical installation materials and systems</p>
+  </section>
+  <section style="background:#e0f3ff; padding:60px 0 60px 0; text-align:center;" data-aos="fade-up" data-aos-once="true" data-aos-out="fade-out">
+    <h2 style="font-size:2.5rem; font-weight:700; color:#111; margin-bottom:1rem;">Why Lauritz Knudsen Stands Out</h2>
+    <div style="width:70px; height:5px; background:var(--company-accent); margin:0 auto 2rem auto; border-radius:3px;"></div>
+    <p style="max-width:800px; margin:0 auto; font-size:1.25rem; color:#222; line-height:1.6;">
+      Lauritz Knudsen, a part of Schneider Electric, is a pioneer in electrical installation materials, blending Danish design with cutting-edge technology and sustainability.
+    </p>
+  </section>
+
+  <section id="products" style="background:#fafbfc; padding:60px 0 60px 0; text-align:center;" data-aos="fade-up" data-aos-once="true" data-aos-out="fade-out">
+    <h2 style="font-size:2.5rem; font-weight:700; color:#111; margin-bottom:1rem;">Featured Products</h2>
+    <div style="width:80px; height:4px; background:linear-gradient(90deg,#0ea5e9,#6366f1); margin:0 auto 2rem auto; border-radius:2px;"></div>
+  <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:40px; justify-content:center; max-width:900px; margin:0 auto;">
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="product-img-container">
+          <img src="../assets/images/xD1000.png" alt="xD1000 Drive" class="product-img" style="height:200px; width:85%; max-width:320px; object-fit:contain;" />
+        </div>
+        <h3 style="font-size:1.5rem; font-weight:700; margin-bottom:12px;">xD1000 Drive</h3>
+        <p style="color:#444; font-size:1.1rem; margin-bottom:18px;">The xD1000 Drive is a compact yet robust variable frequency drive (VFD) designed to meet the needs of various general-purpose applications such as pump, fan, conveyor & compressors cutting across Industry & Building segments.</p>
+        <div style="margin-bottom:16px; font-size:1rem; text-align:left;">
+          <strong>Key Specifications:</strong><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Application: General Purpose</span>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Control: V/f, SVC</span><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-bottom:6px;">Power Range: 0.4 kW to 22 kW</span>
+        </div>
+        <a href="#" class="download-btn">&#x1F4E5; Download Brochure</a>
+      </div>
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="product-img-container">
+          <img src="../assets/images/xD2000.png" alt="xD2000 Drive" class="product-img" style="height:250px; width:85%; max-width:320px; object-fit:contain;" />
+        </div>
+        <h3 style="font-size:1.5rem; font-weight:700; margin-bottom:12px;">xD2000 Drive</h3>
+        <p style="color:#444; font-size:1.1rem; margin-bottom:18px;">The xD2000 Drive is a high-performance variable frequency drive designed to deliver exceptional control and efficiency for a variety of utility applications with its advanced control capabilities.</p>
+        <div style="margin-bottom:16px; font-size:1rem; text-align:left;">
+          <strong>Key Specifications:</strong><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Application: Utility</span>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Control: Advanced SVC</span><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-bottom:6px;">Power Range: 0.75 kW to 800 kW</span>
+        </div>
+        <a href="#" class="download-btn">&#x1F4E5; Download Brochure</a>
+      </div>
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="product-img-container">
+          <img src="../assets/images/xD3000.png" alt="xD3000 Drive" class="product-img" style="height:200px; width:85%; max-width:320px; object-fit:contain;" />
+        </div>
+        <h3 style="font-size:1.5rem; font-weight:700; margin-bottom:12px;">xD3000 Drive</h3>
+        <p style="color:#444; font-size:1.1rem; margin-bottom:18px;">The xD3000 Drive is a versatile and high-performance variable frequency drive designed for a wide range of OEM applications.</p>
+        <div style="margin-bottom:16px; font-size:1rem; text-align:left;">
+          <strong>Key Specifications:</strong><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Application: OEM</span>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Control: High Performance</span><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-bottom:6px;">Power Range: 0.4 kW to 500 kW</span>
+        </div>
+        <a href="#" class="download-btn">&#x1F4E5; Download Brochure</a>
+      </div>
+      <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="product-img-container">
+          <img src="../assets/images/xD4000.png" alt="xD4000 Drive" class="product-img" style="height:250px; width:85%; max-width:320px; object-fit:contain;" />
+        </div>
+        <h3 style="font-size:1.5rem; font-weight:700; margin-bottom:12px;">xD4000 Drive</h3>
+        <p style="color:#444; font-size:1.1rem; margin-bottom:18px;">The xD4000 Drive is a highly advanced variable frequency drive designed for demanding applications in industries such as manufacturing, water treatment, and process automation.</p>
+        <div style="margin-bottom:16px; font-size:1rem; text-align:left;">
+          <strong>Key Specifications:</strong><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Application: Demanding Industrial</span>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-right:8px; margin-bottom:6px;">Control: Advanced Process Control</span><br>
+          <span style="display:inline-block; background:#f3f4f6; border-radius:6px; padding:4px 12px; margin-bottom:6px;">Power Range: 1.5 kW to 1200 kW</span>
+        </div>
+        <a href="#" class="download-btn">&#x1F4E5; Download Brochure</a>
+      </div>
+    </div>
+  </section>
+  </section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ duration: 900, once: false });</script>
+  <section class="site-footer">
+    <div class="container mx-auto p-6 text-center text-sm">
+      <p>&copy; <span id="footer-year"></span> Airline Engineers. All Rights Reserved.</p>
+    </div>
+  </section>
+</body>
+</html>

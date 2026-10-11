@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kärcher - Airline Engineers</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    :root {
+      --company-main: #FFD600;
+      --company-accent: #FFD600;
+    }
+    .company-header-bg { background: var(--company-main); }
+    .company-accent { color: var(--company-accent); border-color: var(--company-accent); }
+  </style>
+</head>
+<body style="margin:0; padding:0; font-family: 'Inter', Arial, sans-serif; background:#e6eef3;">
+  <header style="background:#fff; height:80px; display:flex; align-items:center; justify-content:space-between; padding:0 2rem; box-sizing:border-box; position:sticky; top:0; z-index:100;">
+  <a href="../index.html" style="display:flex; align-items:center; gap:8px; text-decoration:none; font-size:1.25rem; font-weight:700; color:#111; margin-left:32px;">
+    <img src="../assets/images/aelogo.png" alt="Logo" style="width:56px; height:56px; object-fit:contain; margin-left:10px; margin-right:10px;" />
+    <span style="font-family: 'Inter', Arial, sans-serif; color:#111; font-weight:700;">Airline Engineers</span>
+  </a>
+  <div style="position:absolute; left:50%; top:0; height:80px; display:flex; align-items:center; transform:translateX(-50%); z-index:1;">
+  <img src="../assets/images/karcherlogo.png" alt="Kärcher Logo" style="height:56px; max-width:160px; object-fit:contain; display:block;" />
+  </div>
+  <nav>
+  <a href="#products" style="color:#444; text-decoration:none; font-weight:500; font-size:1.1rem;" onclick="event.preventDefault(); document.querySelector('#products').scrollIntoView({ behavior: 'smooth' });">Products</a>
+  </nav>
+</header>
+  <section class="company-header-bg" style="padding: 60px 0 60px 0; text-align:center; color:#fff;" data-aos="slide-down">
+    <h1 style="font-size:3rem; font-weight:800; margin-bottom:1rem;">Kärcher</h1>
+    <p style="font-size:1.4rem; font-weight:400;">Professional cleaning equipment and solutions</p>
+  </section>
+  <section style="background:#f5f7d2; padding:60px 0 60px 0; text-align:center;" data-aos="fade-up">
+    <h2 style="font-size:2.5rem; font-weight:700; color:#111; margin-bottom:1rem;">Why Kärcher Stands Out</h2>
+    <div style="width:70px; height:5px; background:var(--company-accent); margin:0 auto 2rem auto; border-radius:3px;"></div>
+    <p style="max-width:800px; margin:0 auto; font-size:1.25rem; color:#222; line-height:1.6;">
+      Kärcher is a German company specializing in high-quality cleaning equipment, renowned for innovation, efficiency, and sustainability.
+    </p>
+  </section>
+
+  <section id="products" style="background:#fff; padding:48px 0 48px 0;" data-aos="fade-up">
+  <h2 data-aos="fade-up" style="font-size:2.1rem; font-weight:700; color:#111; margin-bottom:2.2rem; text-align:center;">Professional Solutions</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:36px; max-width:1100px; margin:0 auto;">
+  <div data-aos="zoom-in" data-aos-delay="100" style="text-align:center;">
+  <img src="../assets/images/hpc.png" alt="High Pressure Cleaners" style="width:100%; max-width:100%; height:auto; object-fit:contain; margin-bottom:18px;" />
+        <div style="font-weight:700; color:#222; font-size:1.18rem; margin-bottom:8px;">High Pressure Cleaners</div>
+        <div style="font-size:1.01rem; color:#444;">Powerful cleaning for industrial and commercial use.</div>
+      </div>
+  <div data-aos="zoom-in" data-aos-delay="200" style="text-align:center;">
+  <img src="../assets/images/karcher-vacuum.png" alt="Vacuum Cleaners" style="width:100%; max-width:100%; height:auto; object-fit:contain; margin-bottom:18px;" />
+        <div style="font-weight:700; color:#222; font-size:1.18rem; margin-bottom:8px;">Vacuum Cleaners</div>
+        <div style="font-size:1.01rem; color:#444;">Efficient dust and debris removal for all environments.</div>
+      </div>
+  <div data-aos="zoom-in" data-aos-delay="300" style="text-align:center;">
+  <img src="../assets/images/karcher-scrubber.png" alt="Scrubber Driers" style="width:100%; max-width:100%; height:auto; object-fit:contain; margin-bottom:18px;" />
+        <div style="font-weight:700; color:#222; font-size:1.18rem; margin-bottom:8px;">Scrubber Driers</div>
+        <div style="font-size:1.01rem; color:#444;">Deep cleaning for floors in large facilities.</div>
+      </div>
+  <div data-aos="zoom-in" data-aos-delay="400" style="text-align:center;">
+  <img src="../assets/images/karcher-steam.png" alt="Steam Cleaners" style="width:100%; max-width:100%; height:auto; object-fit:contain; margin-bottom:18px;" />
+        <div style="font-weight:700; color:#222; font-size:1.18rem; margin-bottom:8px;">Steam Cleaners</div>
+        <div style="font-size:1.01rem; color:#444;">Hygienic cleaning for sensitive areas.</div>
+      </div>
+  <div data-aos="zoom-in" data-aos-delay="500" style="text-align:center;">
+  <img src="../assets/images/karcher-sweeper.png" alt="Sweepers" style="width:100%; max-width:100%; height:auto; object-fit:contain; margin-bottom:18px;" />
+        <div style="font-weight:700; color:#222; font-size:1.18rem; margin-bottom:8px;">Sweepers</div>
+        <div style="font-size:1.01rem; color:#444;">Fast and effective outdoor cleaning.</div>
+      </div>
+  <div data-aos="zoom-in" data-aos-delay="600" style="text-align:center;">
+  <img src="../assets/images/karcher-carpet.png" alt="Carpet Cleaners" style="width:100%; max-width:100%; height:auto; object-fit:contain; margin-bottom:18px;" />
+        <div style="font-weight:700; color:#222; font-size:1.18rem; margin-bottom:8px;">Carpet Cleaners</div>
+        <div style="font-size:1.01rem; color:#444;">Professional carpet and upholstery care.</div>
+      </div>
+    </div>
+  </section>
+  <section style="background:#ffffff; padding:48px 0 48px 0;">
+    <div style="max-width:900px; margin:0 auto; display:flex; flex-wrap:wrap; gap:36px; justify-content:center;">
+      <div style="flex:1 1 340px; background:#fff; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:32px 24px; min-width:280px;" data-aos="fade-up" data-aos-delay="700">
+        <h3 style="color:#FFD600; font-size:1.35rem; font-weight:700; margin-bottom:12px;">Professional Accessories</h3>
+        <div style="font-size:1.15rem; color:#222; font-weight:600; margin-bottom:8px;">Accessories</div>
+        <div style="font-size:1.01rem; color:#444;">With Kärcher original accessories, you can optimise the power and extend the areas of use of your cleaning machines.</div>
+      </div>
+      <div style="flex:1 1 340px; background:#fff; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:32px 24px; min-width:280px;" data-aos="fade-up" data-aos-delay="800">
+        <h3 style="color:#FFD600; font-size:1.35rem; font-weight:700; margin-bottom:12px;">Professional Cleaning Agents</h3>
+        <div style="font-size:1.15rem; color:#222; font-weight:600; margin-bottom:8px;">Cleaning and care products</div>
+        <div style="font-size:1.01rem; color:#444;">Kärcher cleaning machines, combined with specially formulated cleaning agents, deliver outstanding performance.</div>
+      </div>
+    </div>
+  </section>
+  </section>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ duration: 900, once: false });</script>
+  <section class="site-footer">
+    <div class="container mx-auto p-6 text-center text-sm">
+      <p>&copy; <span id="footer-year"></span> Airline Engineers. All Rights Reserved.</p>
+    </div>
+  </section>
+</body>
+</html>

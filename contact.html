@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Airline Engineers</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Framer Motion for spring animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/6.5.1/framer-motion.min.js"></script>
+  
+  <!-- GSAP for scroll-linked animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- Google Fonts - Apple-inspired typography -->
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=SF+Pro+Text:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="contact min-h-screen antialiased">
+  <div class="mx-auto max-w-[1536px]">
+    <div class="flex min-h-dvh w-full flex-col">
+      
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container">
+          <a href="/" class="brand flex items-center space-x-3">
+            <img src="assets/images/aelogo.png" alt="Airline Engineers" class="h-8 w-auto">
+            <span class="text-xl font-semibold">Airline Engineers</span>
+          </a>
+          <nav class="nav hidden md:flex" id="main-nav">
+            <a href="#partner-brands" class="nav-link hover:text-primary transition-colors duration-200">Companies</a>
+            <a href="#history" class="nav-link hover:text-primary transition-colors duration-200">History</a>
+            <a href="#about" class="nav-link hover:text-primary transition-colors duration-200">About Us</a>
+            <a href="#services" class="nav-link hover:text-primary transition-colors duration-200">Services</a>
+            <a href="#contact" class="nav-link hover:text-primary transition-colors duration-200">Contact</a>
+          </nav>
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-btn" class="md:hidden flex items-center p-2 rounded-lg hover:bg-gray-100">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </header>
+      
+      <!-- Mobile menu -->
+      <nav id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#partner-brands" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">Companies</a>
+          <a href="#history" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">History</a>
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">About Us</a>
+          <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">Services</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">Contact</a>
+        </div>
+      </nav>
+      
+      <main class="flex-1">
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 md:py-24 bg-background">
+          <div class="container max-w-3xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <!-- Contact Info -->
+              <div>
+                <h2 class="section-title mb-6">Contact Us</h2>
+                <p class="text-lg text-muted-foreground mb-6">
+                  We'd love to hear from you! Whether you have questions about our services, 
+                  need technical support, or want to discuss a potential partnership, 
+                  our team is here to help.
+                </p>
+                
+                <div class="space-y-5">
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center bg-primary/10 rounded-lg">
+                      <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-primary">Email</h3>
+                      <p class="text-sm text-muted-foreground">
+                        info@airlineengineers.com
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center bg-primary/10 rounded-lg">
+                      <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 10l7.89 5.26a2 2 0 002.22 0L21 10M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-primary">Phone</h3>
+                      <p class="text-sm text-muted-foreground">
+                        +91 12345 67890
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center bg-primary/10 rounded-lg">
+                      <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9-7-9-7v12z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-primary">Address</h3>
+                      <p class="text-sm text-muted-foreground">
+                        123, Company Street, Hyderabad, India
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <a href="#" class="btn-primary inline-flex items-center px-6 py-3 text-base font-medium transition-all duration-200 transform hover:-translate-y-1 hover:scale-105">
+                  Get in Touch
+                  <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              
+              <!-- Contact Form -->
+              <div>
+                <motion.div 
+                  whileHover={{ scale: 1.02 }} 
+                  whileTap={{ scale: 0.98 }}
+                  class="rounded-xl overflow-hidden shadow-lg border border-primary/20"
+                >
+                  <form class="p-6">
+                    <div class="space-y-4">
+                      <div>
+                        <label for="name" class="block text-sm font-medium text-primary mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-primary/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" placeholder="Enter your full name">
+                      </div>
+                      
+                      <div>
+                        <label for="email" class="block text-sm font-medium text-primary mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-primary/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" placeholder="Enter your email address">
+                      </div>
+                      
+                      <div>
+                        <label for="subject" class="block text-sm font-medium text-primary mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-primary/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" placeholder="Enter subject">
+                      </div>
+                      
+                      <div>
+                        <label for="message" class="block text-sm font-medium text-primary mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-primary/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-200" placeholder="Enter your message"></textarea>
+                      </div>
+                      
+                      <button type="submit" class="w-full btn-primary py-3 text-base font-medium transition-all duration-200 transform hover:-translate-y-1 hover:scale-105">
+                        Send Message
+                        <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <!-- Footer -->
+      <section class="site-footer">
+        <div class="container mx-auto p-6 text-center text-sm">
+          <p>&copy; <span id="footer-year"></span> Airline Engineers. All Rights Reserved.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <!-- AOS initialization -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+  
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Airline Engineers</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Framer Motion for spring animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/6.5.1/framer-motion.min.js"></script>
+  
+  <!-- GSAP for scroll-linked animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  
+  <!-- AOS for scroll animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <!-- Google Fonts - Apple-inspired typography -->
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=SF+Pro+Text:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="about min-h-screen antialiased">
+  <div class="mx-auto max-w-[1536px]">
+    <div class="flex min-h-dvh w-full flex-col">
+      
+      <!-- Header -->
+      <header class="site-header">
+        <div class="container">
+          <a href="/" class="brand flex items-center space-x-3">
+            <img src="assets/images/aelogo.png" alt="Airline Engineers" class="h-8 w-auto">
+            <span class="text-xl font-semibold">Airline Engineers</span>
+          </a>
+          <nav class="nav hidden md:flex" id="main-nav">
+            <a href="#partner-brands" class="nav-link hover:text-primary transition-colors duration-200">Companies</a>
+            <a href="#history" class="nav-link hover:text-primary transition-colors duration-200">History</a>
+            <a href="#about" class="nav-link hover:text-primary transition-colors duration-200">About Us</a>
+            <a href="#services" class="nav-link hover:text-primary transition-colors duration-200">Services</a>
+            <a href="#contact" class="nav-link hover:text-primary transition-colors duration-200">Contact</a>
+          </nav>
+          <!-- Mobile menu button -->
+          <button id="mobile-menu-btn" class="md:hidden flex items-center p-2 rounded-lg hover:bg-gray-100">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+      </header>
+      
+      <!-- Mobile menu -->
+      <nav id="mobile-menu" class="md:hidden hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#partner-brands" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">Companies</a>
+          <a href="#history" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">History</a>
+          <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">About Us</a>
+          <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">Services</a>
+          <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 hover:text-primary">Contact</a>
+        </div>
+      </nav>
+      
+      <main class="flex-1">
+        <!-- About Section -->
+        <section id="about" class="py-12 md:py-24 bg-background">
+          <div class="container max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <!-- Text Content -->
+              <div>
+                <h2 class="section-title mb-6">About Us</h2>
+                <p class="text-lg text-muted-foreground mb-6">
+                  Founded in 2004, Airline Engineers specializes in industrial innovation, 
+                  delivering excellence in engineering solutions for over two decades. 
+                  Our journey began with a vision to provide quality industrial solutions 
+                  and has grown into a trusted partner for global brands and local industries alike.
+                </p>
+                
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 h-8 w-8 flex items-center justify-center bg-primary/10 rounded-md">
+                      <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-primary">Our Legacy</h3>
+                      <p class="text-sm text-muted-foreground">
+                        Established in 2004 with a commitment to excellence and technical precision.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 h-8 w-8 flex items-center justify-center bg-primary/10 rounded-md">
+                      <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-primary">Our Mission</h3>
+                      <p class="text-sm text-muted-foreground">
+                        To deliver industrial excellence through innovative engineering solutions.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 h-8 w-8 flex items-center justify-center bg-primary/10 rounded-md">
+                      <svg class="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="font-semibold text-primary">Our Values</h3>
+                      <p class="text-sm text-muted-foreground">
+                        Innovation, Integrity, Quality, and Customer Focus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <a href="#services" class="btn-primary inline-flex items-center px-6 py-3 text-base font-medium transition-all duration-200 transform hover:-translate-y-1 hover:scale-105">
+                  Explore Our Services
+                  <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+              
+              <!-- Image/Illustration -->
+              <div class="relative h-64 lg:h-96">
+                <motion.div 
+                  whileHover={{ scale: 1.02 }} 
+                  whileTap={{ scale: 0.98 }}
+                  class="absolute inset-0 rounded-xl overflow-hidden shadow-lg"
+                >
+                  <img src="assets/images/aelogo.png" alt="Airline Engineers Logo" class="w-full h-full object-cover" />
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- History Timeline -->
+        <section id="history" class="py-12 md:py-24 bg-card">
+          <div class="container max-w-4xl mx-auto text-center">
+            <h2 class="section-title mb-6">Our Legacy</h2>
+            <div class="w-28 h-0.5 bg-gradient-to-r from-primary to-primary/50 mx-auto mb-8"></div>
+            <p class="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+              Established in 2004, Airline Engineers has grown from a small technical service provider 
+              to a trusted partner in the industrial solutions sector. With a commitment to excellence 
+              and technical precision, we have built lasting relationships with global brands and local industries alike.
+            </p>
+            
+            <!-- Timeline -->
+            <div class="timeline mt-12 relative">
+              <!-- Continuous center line -->
+              <div class="absolute inset-0 w-0.5 bg-primary/20"></div>
+              
+              <!-- Timeline items -->
+              <div class="timeline-item relative">
+                <!-- Left card -->
+                <div class="timeline-card left mb-8">
+                  <h4 class="text-blue-600 font-semibold mb-2">Foundation</h4>
+                  <p class="text-gray-600">Airline Engineers was established with a vision to provide quality industrial solutions.</p>
+                </div>
+                
+                <!-- Year pill -->
+                <div class="timeline-center absolute left-1/2 -translate-x-1/2 -top-2.5">
+                  <div class="year-pill w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full text-sm font-medium">2004</div>
+                </div>
+                
+                <!-- Spacer -->
+                <div class="timeline-spacer h-8"></div>
+              </div>
+              
+              <div class="timeline-item relative">
+                <!-- Spacer -->
+                <div class="timeline-spacer h-8"></div>
+                
+                <!-- Year pill -->
+                <div class="timeline-center absolute left-1/2 -translate-x-1/2 -top-2.5">
+                  <div class="year-pill w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full text-sm font-medium">2008</div>
+                </div>
+                
+                <!-- Right card -->
+                <div class="timeline-card right mb-8">
+                  <h4 class="text-blue-600 font-semibold mb-2">Expansion</h4>
+                  <p class="text-gray-600">Became authorized dealers for multiple international brands.</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item relative">
+                <!-- Left card -->
+                <div class="timeline-card left mb-8">
+                  <h4 class="text-blue-600 font-semibold mb-2">Innovation</h4>
+                  <p class="text-gray-600">Introduced cutting-edge technologies and sustainable solutions.</p>
+                </div>
+                
+                <!-- Year pill -->
+                <div class="timeline-center absolute left-1/2 -translate-x-1/2 -top-2.5">
+                  <div class="year-pill w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full text-sm font-medium">2015</div>
+                </div>
+                
+                <!-- Spacer -->
+                <div class="timeline-spacer h-8"></div>
+              </div>
+              
+              <div class="timeline-item relative">
+                <!-- Spacer -->
+                <div class="timeline-spacer h-8"></div>
+                
+                <!-- Year pill -->
+                <div class="timeline-center absolute left-1/2 -translate-x-1/2 -top-2.5">
+                  <div class="year-pill w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full text-sm font-medium">2023</div>
+                </div>
+                
+                <!-- Right card -->
+                <div class="timeline-card right mb-8">
+                  <h4 class="text-blue-600 font-semibold mb-2">Excellence</h4>
+                  <p class="text-gray-600">Continued commitment to innovation and customer satisfaction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+      <!-- Footer -->
+      <section class="site-footer">
+        <div class="container mx-auto p-6 text-center text-sm">
+          <p>&copy; <span id="footer-year"></span> Airline Engineers. All Rights Reserved.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <!-- AOS initialization -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+  
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
